@@ -1,0 +1,39 @@
+{
+    "name": "Scarleth Yahoska Loáisiga Ruiz",
+    "degree": "Software Engineer",
+    "id": "001-181093-0024S",
+    "celphone": "8486-3397",
+    "email": "sloaisiga18@gmail.com",
+    "address": "North Batahola, House number 1039.",
+    "languages": ["Native speaker of Spanish", "B1 English"],
+    "academicExperience": [
+        {
+            "date": "Ene 2015 / Jul 2016", 
+            "jobDescription": "Analist And Programmer",
+            "place": "Universidad Centroamericana",
+            "description": "Develop a project evaluation and management system for UCA Social Service."
+        },
+        {
+            "date": "Sep 2014 / Jun 2015", 
+            "jobDescription": "Developer",
+            "place": "Universidad Centroamericana",
+            "description": "Support staff during the migration of the UCA website."
+        },
+        {
+            "date": "Mar 2017 / - ", 
+            "jobDescription": "Web Designer",
+            "place": "Accedo",
+            "description": "Implementation and Support of websites."
+        }
+    ],
+    "education": [
+       {
+           "university": "Universidad Centroamericana (UCA) / Managua",
+           "range": "2011 - 2016"
+       },
+       {
+            "university":"Colegio Parroquial Sagrado Corazón de Jesús / Managua",
+            "range":"2006 - 2010"
+       } 
+    ]
+}
