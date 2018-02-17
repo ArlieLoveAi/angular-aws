@@ -1,11 +1,126 @@
 {
     "name": "Scarleth Yahoska Loáisiga Ruiz",
     "degree": "Software Engineer",
+    "objective": "Dedicated software engineer with experience in web design who wants to increase her skills and knowledge in IT field. ",
     "id": "001-181093-0024S",
     "celphone": "8486-3397",
     "email": "sloaisiga18@gmail.com",
     "address": "North Batahola, House number 1039.",
     "languages": ["Native speaker of Spanish", "B1 English"],
+    "technicalSkills": [
+        {
+            "name": "SASS",
+            "tag": ["preprocessor"]
+        },
+        {
+            "name": "Java",
+            "tag": ["language"]
+        },
+        {
+            "name": "Python",
+            "tag": ["language"]
+        },
+        {
+            "name": "Ruby",
+            "tag": ["language"]
+        },
+        {
+            "name": "Javascript",
+            "tag": ["language", "web"]
+        },
+        {
+            "name": "Eclipse Kepler",
+            "tag": ["framework"]
+        },
+        {
+            "name": "Django",
+            "tag": ["framework", "web", "Python"]
+        },
+        {
+            "name": "Rails",
+            "tag": ["framework", "web", "Ruby"]
+        },
+        {
+            "name": "Vue",
+            "tag": ["framework"]
+        },
+        {
+            "name": "Angular",
+            "tag": ["framework"]
+        },
+        {
+            "name": "Joomla",
+            "tag": ["cms"]
+        },
+        {
+            "name": "WordPress",
+            "tag": ["cms"]
+        },
+        {
+            "name": "Photoshop CC",
+            "tag": ["adobeSuite"]
+        },
+        {
+            "name": "Premier CS6",
+            "tag": ["adobeSuite"]
+        },
+        {
+            "name": "GIT",
+            "tag": ["cvs"]
+        },
+        {
+            "name": "SCRUM",
+            "tag": ["methodologies"]
+        },
+        {
+            "name": "XP",
+            "tag": ["methodologies"]
+        },
+        {
+            "name": "Windows",
+            "tag": ["os"]
+        },
+        {
+            "name": "Mac",
+            "tag": ["os"]
+        },
+        {
+            "name": "Bootstrap",
+            "tag": ["frondEndFrameworks"]
+        },
+        {
+            "name": "Foundation",
+            "tag": ["frondEndFrameworks"]
+        },
+        {
+            "name": "HTML5", 
+            "tag": ["web"]
+        },
+        {
+            "name": "CSS3", 
+            "tag": ["web"]
+        },
+        {
+            "name": "AWS", 
+            "tag": ["devops"]
+        },
+        {
+            "name": "Microsoft SQL Server 2008, 2012, 2014", 
+            "tag": ["database"]
+        },
+        {
+            "name": "PostgreSQL", 
+            "tag": ["database"]
+        },
+        {
+            "name": "MySQL", 
+            "tag": ["database"]
+        },
+        {
+            "name": "WebPack", 
+            "tag": ["require", "web", "module bundler"]
+        }
+    ],
     "academicExperience": [
         {
             "date": "Ene 2015 / Jul 2016", 
@@ -28,12 +143,26 @@
     ],
     "education": [
        {
-           "university": "Universidad Centroamericana (UCA) / Managua",
+           "university": "Universidad Centroamericana (UCA)",
+           "department": "Managua",
            "range": "2011 - 2016"
        },
        {
-            "university":"Colegio Parroquial Sagrado Corazón de Jesús / Managua",
+            "highSchool":"Colegio Parroquial Sagrado Corazón de Jesús",
+            "department": "Managua",
             "range":"2006 - 2010"
        } 
+    ],
+    "courses": [
+        {
+            "name": "Communicative English Program",
+            "place": "Centro cultural nicaraguense norteamericano",
+            "range": "2007 - 2009"
+        },
+        {
+            "name": "Course in GNU/LINUX Server Administration (CentOS)",
+            "place": "Universidad Centroamericana",
+            "range": "2014"
+        }
     ]
 }

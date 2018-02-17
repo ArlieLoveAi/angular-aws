@@ -2,8 +2,10 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
+        <img src="./assets/img.png" alt="">
         <h1>{{app.person.name}}</h1>
         <h5>{{app.person.degree}}</h5>
+        <p>{{app.person.objective}}</p>
         <ul>
           <li ng-repeat="general in app.maindata">
             {{app.person[general]}}
@@ -18,6 +20,17 @@
             <academic-experience  experience="academicExperience"></academic-experience>    
           </li>
         </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <label for="searchSkills">Search:</label>
+        <input type="text" name="searchSkill" id="searchSkill" ng-model="searchSkill">
+          <ul>
+            <li ng-repeat="technicalSkills in app.person.technicalSkills | filter:searchSkill">
+              <technical-skills  skills="technicalSkills"></technical-skills>    
+            </li>
+          </ul>
       </div>
     </div>
   </div>

@@ -22,6 +22,16 @@ let academicExperience = () => {
   };
 };
 
+let technicalSkills = () => {
+  return {
+    restrict: 'E',
+    scope: {
+      skills: '=skills'
+    },
+    template: require('./technical-skills.html')
+  };
+};
+
 class AppCtrl {
   constructor() {
     this.person = person;
@@ -34,6 +44,7 @@ const MODULE_NAME = 'app';
 angular.module(MODULE_NAME, [])
   .directive('app', app)
   .directive('academicExperience', academicExperience)
+  .directive('technicalSkills', technicalSkills)
   .controller('AppCtrl', AppCtrl);
 
 export default MODULE_NAME;
