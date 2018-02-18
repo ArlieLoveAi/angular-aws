@@ -1,50 +1,31 @@
 import angular from 'angular';
+import directives from "./directives/directives"
+import controllers from "./controllers/controllers"
+
+import factories from "./factories/factories";
 //const person = require('./person.json');
 
-import person from "./person"
 import '../style/app.css';
 
 let app = () => {
   return {
     template: require('./app.html'),
-    controller: 'AppCtrl',
+    controller: 'appCtrl',
     controllerAs: 'app'
   };
 };
 
-let academicExperience = () => {
-  return {
-    restrict: 'E',
-    scope: {
-      experience: '=experience'
-    },
-    template: require('./academic-experience.html')
-  };
-};
-
-let technicalSkills = () => {
-  return {
-    restrict: 'E',
-    scope: {
-      skills: '=skills'
-    },
-    template: require('./technical-skills.html')
-  };
-};
-
-class AppCtrl {
-  constructor() {
-    this.person = person;
-    this.maindata = ["id", "celphone", "email", "address"];
-  }
-}
-
 const MODULE_NAME = 'app';
 
 angular.module(MODULE_NAME, [])
+  .factory('getItems', factories.getItems)
   .directive('app', app)
-  .directive('academicExperience', academicExperience)
-  .directive('technicalSkills', technicalSkills)
-  .controller('AppCtrl', AppCtrl);
+  .controller('appCtrl', controllers.appCtrl)
+  .directive('languages', directives.languages)
+  .directive('academicExperience', directives.academicExperience)
+  .directive('education', directives.education)
+  .directive('courses', directives.courses)
+  .directive('technicalSkills', directives.technicalSkills)
+  .directive('references', directives.references);
 
 export default MODULE_NAME;

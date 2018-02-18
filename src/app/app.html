@@ -14,6 +14,15 @@
       </div>
     </div>
     <div class="row">
+        <div class="col-12">
+          <ul>
+            <li ng-repeat="languages in app.person.languages">
+              <languages  languages="languages"></languages>    
+            </li>
+          </ul>
+        </div>
+      </div>
+    <div class="row">
       <div class="col-12">
         <ul>
           <li ng-repeat="academicExperience in app.person.academicExperience">
@@ -22,6 +31,24 @@
         </ul>
       </div>
     </div>
+    <div class="row">
+      <div class="col-12">
+        <ul>
+          <li ng-repeat="education in app.person.education">
+            <education  education="education"></education>    
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+          <ul>
+            <li ng-repeat="courses in app.person.courses">
+              <courses  courses="courses"></courses>    
+            </li>
+          </ul>
+        </div>
+      </div>
     <div class="row">
       <div class="col-12">
         <label for="searchSkills">Search:</label>
@@ -33,6 +60,15 @@
           </ul>
       </div>
     </div>
+    <div class="row">
+        <div class="col-12">
+            <ul>
+              <li ng-repeat="references in app.person.references">
+                <references references="references"></references>    
+              </li>
+            </ul>
+        </div>
+      </div>
   </div>
 </main>
 <footer></footer>
