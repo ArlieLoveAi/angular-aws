@@ -16,7 +16,7 @@ let app = () => {
 };
 
 const MODULE_NAME = 'app';
-
+console.log('factories', factories)
 angular.module(MODULE_NAME, [])
   .factory('getItems', factories.getItems)
   .directive('app', app)

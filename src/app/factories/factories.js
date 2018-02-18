@@ -1,5 +1,5 @@
-const getItems= function() {
-    return require('../person.json');
+function getItems() {
+    return () => require('../person.json');
 };
 
 export default {
