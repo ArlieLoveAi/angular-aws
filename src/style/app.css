@@ -5,6 +5,12 @@ body {
   font-size: 14px;
   background-color: #fdfdfd;
 }
+.home a {
+  color: #009fc2;
+}
+.home a:hover, .home a:active, .home a:focus {
+  color: #1c738b;
+}
 .home .no-padding {
   padding-left: 0;
   padding-right: 0;

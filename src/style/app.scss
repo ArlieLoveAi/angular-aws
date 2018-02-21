@@ -1,11 +1,33 @@
 /* styles in src/style directory are applied to the whole page */
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i');
+@mixin on-event($self: false) {
+    @if $self {
+        &,
+        &:hover,
+        &:active,
+        &:focus {
+            @content;
+        }
+    } @else {
+        &:hover,
+        &:active,
+        &:focus {
+            @content;
+        }
+    }
+}
 body{
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     background-color: #fdfdfd;
 }
 .home{
+    a{
+        color: #009fc2;
+        @include on-event{
+            color: #1c738b;
+        }
+    }
     .no-padding{
         padding-left: 0;
         padding-right: 0;
