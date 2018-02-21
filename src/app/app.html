@@ -1,74 +1,24 @@
-<main>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <img src="./assets/img.png" alt="">
-        <h1>{{app.person.name}}</h1>
-        <h5>{{app.person.degree}}</h5>
-        <p>{{app.person.objective}}</p>
-        <ul>
-          <li ng-repeat="general in app.maindata">
-            {{app.person[general]}}
-          </li>
-        </ul>
+<main class="home">
+  <section class="left-panel">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-4">
+          <img class= "img-fluid rounded-circle" src="./assets/img.png" alt="Resume Photo">
+        </div>
       </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
+      <div class="row">
+        <div class="col-12 col-sm-4">
+          <h3>{{app.person.name}}</h3>
+          <h5>{{app.person.degree}}</h5>
+          <p>{{app.person.objective}}</p>
           <ul>
-            <li ng-repeat="languages in app.person.languages">
-              <languages  languages="languages"></languages>    
+            <li ng-repeat="general in app.maindata">
+              {{app.person[general]}}
             </li>
           </ul>
         </div>
       </div>
-    <div class="row">
-      <div class="col-12">
-        <ul>
-          <li ng-repeat="academicExperience in app.person.academicExperience">
-            <academic-experience  experience="academicExperience"></academic-experience>    
-          </li>
-        </ul>
-      </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        <ul>
-          <li ng-repeat="education in app.person.education">
-            <education  education="education"></education>    
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-          <ul>
-            <li ng-repeat="courses in app.person.courses">
-              <courses  courses="courses"></courses>    
-            </li>
-          </ul>
-        </div>
-      </div>
-    <div class="row">
-      <div class="col-12">
-        <label for="searchSkills">Search:</label>
-        <input type="text" name="searchSkill" id="searchSkill" ng-model="searchSkill">
-          <ul>
-            <li ng-repeat="technicalSkills in app.person.technicalSkills | filter:searchSkill">
-              <technical-skills  skills="technicalSkills"></technical-skills>    
-            </li>
-          </ul>
-      </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <ul>
-              <li ng-repeat="references in app.person.references">
-                <references references="references"></references>    
-              </li>
-            </ul>
-        </div>
-      </div>
-  </div>
+  </section>
 </main>
 <footer></footer>
