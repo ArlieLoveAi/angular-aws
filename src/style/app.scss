@@ -1,1 +1,113 @@
 /* styles in src/style directory are applied to the whole page */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i');
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+.home{
+    .no-padding{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .img-name{
+        margin: 20px 0;
+      img{
+          display: block;
+        margin: 0 auto;
+      }
+    }
+    .border-top{
+        border-top: 1px solid #000; 
+        padding-top: 20px;
+    }
+    .title{
+        margin-bottom: 0;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+    .personal-info,
+    .acad-pro-experience,
+    .languages,
+    .education{
+        ul{
+            list-style-type: none;
+            padding-left: 0;
+            li{
+                margin-bottom: 8px;
+            }
+        }
+    }
+    .languages{
+        .title{
+            margin-top: 20px;
+        }
+        ul{
+            li{
+                margin-bottom: 8px;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .education{
+        span.department{
+            font-weight: 700;
+        }
+    }
+    .acad-pro-experience{
+        .experience-date,
+        .experience-descrip-place{
+            margin-bottom: 0;
+        }
+        .experience-descrip-place{
+            font-style: italic;
+        }
+    }
+    .references{
+        margin-top: 10px;
+        .border-top{
+            .reference{
+                margin-top: 10px;
+                .reference-name,
+                .reference-workplace,
+                .reference-cellphone,
+                .reference-email{
+                    margin-bottom: 0;
+                }
+                &:first-child{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .courses{
+        .title{
+            margin-top: 20px;
+        }
+        .border-top{
+            div{
+                &:last-child{
+                    p{
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .skills{
+        .border-top{
+            .form-group{
+                input{
+                    display: block;
+                    width: 100%;
+                }
+                .add-margin-top{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

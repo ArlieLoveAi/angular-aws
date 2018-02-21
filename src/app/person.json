@@ -1,5 +1,5 @@
 {
-    "name": "Scarleth Loáisiga",
+    "name": "Scarleth Yahoska Loáisiga Ruiz",
     "degree": "Software Engineer",
     "objective": "Dedicated software engineer with experience in web design who wants to increase her skills and knowledge in IT field. ",
     "id": "001-181093-0024S",
@@ -163,7 +163,7 @@
     "courses": [
         {
             "name": "Communicative English Program",
-            "place": "Centro cultural nicaraguense norteamericano",
+            "place": "Centro Cultural Nicaraguense Norteamericano",
             "range": "2007 - 2009"
         },
         {
@@ -181,10 +181,17 @@
             "email": "elsner.gonzalez@ns.uca.edu.ni"
         },
         {
+            "name": "Gastón Ortega",
+            "workPlace": "Universidad Centroamericana",
+            "jobDescription": "Social Service Coordinator",
+            "celphone": "8688-9266",
+            "email": "serviciosocial@ns.uca.edu.ni"
+        },
+        {
             "name": "Augusto Martinez",
             "workPlace": "Accedo Technologies",
             "jobDescription": "Supervisor",
-            "celphone": "XXX-XXXX",
+            "celphone": "8408-1350",
             "email": "augusto.martinez@careerbuilder.com"
         }
     ]

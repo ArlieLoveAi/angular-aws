@@ -62,13 +62,25 @@
       </div>
       <div class="row">
           <div class="col-12">
-              <ul>
-                <li ng-repeat="references in app.person.references">
-                  <references references="references"></references>    
-                </li>
-              </ul>
+            <div ng-repeat="references in app.person.references">
+                <references references="references"></references>    
+            </div>
           </div>
         </div>
     </div>
   </main>
   <footer></footer>
+  <section>
+        <div class="container">
+          <div class="row academic-experience no-padding">
+              <div class="col-12">
+                  <p class="title text-capitalize">Academic Experience</p>
+              </div>
+          </div>
+          <div class="row professional-experience no-padding">
+              <div class="col-12 col-sm-4">
+                  <p class="title text-capitalize">Professional Experience</p>
+              </div>
+          </div>
+        </div>
+      </section>
