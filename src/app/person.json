@@ -1,5 +1,5 @@
 {
-    "name": "Scarleth Yahoska Loáisiga Ruiz",
+    "name": "Scarleth Loáisiga",
     "degree": "Software Engineer",
     "objective": "Dedicated software engineer with experience in web design who wants to increase her skills and knowledge in IT field. ",
     "id": "001-181093-0024S",
@@ -145,7 +145,7 @@
         {
             "date": "Mar 2017 / - ", 
             "jobDescription": "Web Designer",
-            "place": "Accedo",
+            "place": "Accedo Technologies",
             "description": "Implementation and Support of websites."
         }
     ],
@@ -164,12 +164,12 @@
     "courses": [
         {
             "name": "Communicative English Program",
-            "place": "Centro Cultural Nicaraguense Norteamericano",
+            "place": "CCNN",
             "range": "2007 - 2009"
         },
         {
-            "name": "Course in GNU/LINUX Server Administration (CentOS)",
-            "place": "Universidad Centroamericana",
+            "name": "Course in GNU/LINUX Server Administration",
+            "place": "UCA",
             "range": "2014"
         }
     ],

@@ -1,5 +1,7 @@
-/* styles in src/style directory are applied to the whole page */
+/* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i');
+
+/*Mixins*/
 @mixin on-event($self: false) {
     @if $self {
         &,
@@ -16,127 +18,123 @@
         }
     }
 }
+
+/*Variables*/
+$white-color: #fff;
+$black-color: #000;
+$gray: #efefef;
+$primary-color: #009fc2;
+$secondary-color: #00A7CC;
+$tertiary-color: #00687F;
+$background-color: #fdfdfd;
+
+/*General Style*/
 body{
     font-family: 'Lato', sans-serif;
     font-size: 14px;
-    background-color: #fdfdfd;
+    background-color: $background-color;
 }
-.home{
-    a{
-        color: #009fc2;
-        @include on-event{
-            color: #1c738b;
-        }
+
+.no-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+.box-shadow{
+    box-shadow: 0 10px 16px 0 rgba($black-color,0.2),0 6px 20px 0 rgba($black-color,0.19) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 700;
+}
+
+a{
+    color: $white-color;
+    @include on-event{
+        text-decoration: underline;
     }
-    .no-padding{
-        padding-left: 0;
-        padding-right: 0;
+}
+ul{
+    li{
+        list-style-type: none;
     }
-    .img-name{
-        margin: 20px 0;
-      img{
-          display: block;
-        margin: 0 auto;
-      }
-    }
-    .border-top{
-        border-top: 1px solid #000; 
-        padding-top: 20px;
-    }
-    .title{
-        margin-bottom: 0;
-        font-weight: 700;
-        margin-top: 20px;
-        color: #009fc2;
-    }
-    .personal-info{
-        h3{
-            font-weight: 700;
-        }
-    }
-    .personal-info,
-    .acad-pro-experience,
-    .languages,
-    .education{
-        ul{
-            list-style-type: none;
-            padding-left: 0;
-            li{
-                margin-bottom: 8px;
+}
+
+main{
+    #overview{
+        //background-color: $primary-color;
+        background: url("../public/assets/bg-image-2.png") repeat;
+        #general,
+        #personal-information,
+        #languages,
+        #education
+        {
+            h3,
+            h5,
+            h6,
+            p,
+            a,
+            ul li{
+                color: $white-color;
+            }
+            hr{
+                border-color: $white-color;
             }
         }
     }
-    .languages{
-        .title{
-            margin-top: 20px;
-        }
-        ul{
-            li{
-                margin-bottom: 8px;
-                p{
-                    margin-bottom: 0;
-                }
+    #experience{
+        padding-top: 3rem!important;
+
+        #academic-experience{
+            h6{
+                color: $primary-color;
             }
-        }
-    }
-    .education{
-        span.department{
-            font-weight: 700;
-        }
-    }
-    .acad-pro-experience{
-        .experience-date,
-        .experience-descrip-place{
-            margin-bottom: 0;
-        }
-        .experience-descrip-place{
-            font-style: italic;
-        }
-    }
-    .references{
-        margin-top: 10px;
-        .border-top{
-            .reference{
-                margin-top: 10px;
-                .reference-name,
-                .reference-workplace,
-                .reference-cellphone,
-                .reference-email{
-                    margin-bottom: 0;
-                }
-                &:first-child{
-                    margin-top: 0;
-                }
+            .black-color{
+                color: $black-color;
             }
-        }
-    }
-    .courses{
-        .title{
-            margin-top: 20px;
-        }
-        .border-top{
-            div{
+            div.list-academic{
                 &:last-child{
                     p{
-                        &:last-child{
-                            margin-bottom: 0;
-                        }
+                        padding-bottom: 0;
+                        margin-bottom: .25rem!important;
                     }
                 }
+                &:before {    
+                    font-family: 'FontAwesome';
+                    content: '\f067';
+                    margin:0 5px 0 -15px;
+                    color: #f00;
+                    }
+            } 
+        }
+        #experience,
+        #courses,
+        #references
+        {
+            h6{
+                color: $primary-color;
             }
         }
     }
-    .skills{
-        .border-top{
-            .form-group{
-                input{
-                    display: block;
-                    width: 100%;
-                }
-                .add-margin-top{
-                    margin-top: 10px;
-                }
+    #skills{
+        #technical-skills{
+            h6{
+                color: $primary-color;
             }
         }
+    }
+}
+
+@media(min-width:768px){
+    #experience{
+        padding-bottom: 3rem!important;
+    }
+    #skills{
+        padding-top: 3rem!important;
+        padding-bottom: 3rem!important;
     }
 }

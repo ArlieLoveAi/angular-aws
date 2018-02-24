@@ -1,22 +1,30 @@
-<main class="home">
+<main>
   <div class="container">
-    <div class="row">
-        <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-sm-6">
-              <div class="row img-name no-padding">
-                <div class="col-12">
-                  <img class= "img-fluid rounded-circle" src="./assets/img.png" alt="Resume Photo">
+    <div class="row mt-3 mb-3 box-shadow">
+      <div id="overview" class="col-12 col-sm-4 pt-5 pb-5 no-padding">
+          <section id="general">
+            <div class="container">
+                <div class="row no-padding">
+                  <div class="col-12">
+                      <div class="d-flex justify-content-center pb-4">
+                          <img class= "img-fluid rounded-circle box-shadow" src="./assets/img.png" alt="Resume Photo">
+                      </div>  
+                      <h3>{{app.person.name}}</h3>
+                      <h5><i>{{app.person.degree}}</i></h5>
+                      <h6 class="pt-3">Objetive</h6>
+                      <hr>
+                      <p class="text-justify">{{app.person.objective}}</p>
+                  </div>
                 </div>
-              </div>
-              <div class="row personal-info no-padding">
+            </div>
+          </section>
+          <section id="personal-information">
+            <div class="container">
+              <div class="row no-padding">
                 <div class="col-12">
-                  <h3>{{app.person.name}}</h3>
-                  <h6>{{app.person.degree}}</h6>
-                  <p class="title text-capitalize">Objective</p>
-                  <p class="border-top text-justify">{{app.person.objective}}</p>
-                  <p class="title text-capitalize">Personal Information</p>
-                  <ul class="border-top">
+                  <h6 class="pt-3">Personal Information</h6>
+                  <hr>
+                  <ul class="p-0">
                     <li ng-repeat="general in app.maindata">
                       {{app.person[general]}}
                     </li>
@@ -24,82 +32,99 @@
                   </ul>
                 </div>
               </div>
-              <div class="row languages no-padding">
+            </div>
+          </section>
+          <section id="languages">
+            <div class="container">
+              <div class="row no-padding">
                 <div class="col-12">
-                  <p class="title text-capitalize">Languages</p>
-                  <ul class="border-top">
+                  <h6 class="pt-3">Languages</h6>
+                  <hr>
+                  <ul class="p-0">
                     <li ng-repeat="languages in app.person.languages">
                       <languages languages="languages"></languages>    
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="row education no-padding">
-                  <div class="col-12">
-                      <p class="title text-capitalize">Education</p>
-                      <ul class="border-top">
-                          <li ng-repeat="education in app.person.education">
-                              <education  education="education"></education>    
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="row acad-pro-experience no-padding">
-                  <div class="col-12">
-                      <p class="title text-capitalize">Academic/Professional Experience</p>
-                      <div class="border-top">
-                        <div ng-repeat="academicExperience in app.person.academicExperience">
-                          <academic-experience  experience="academicExperience"></academic-experience>    
-                        </div>
-                      </div>
-                  </div>
-              </div>
             </div>
-            <div class="col-12 col-sm-6">
-              <div class="row courses no-padding">
-                  <div class="col-12">
-                      <p class="title text-capitalize">Courses</p>
-                      <div class="border-top">
-                          <div ng-repeat="courses in app.person.courses">
-                            <courses  courses="courses"></courses>    
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="row references">
+          </section>
+          <section id="education">
+            <div class="container">
+              <div class="row no-padding">
                 <div class="col-12">
-                  <p class="title text-capitalize">References</p>
-                  <div class="border-top">
-                    <div class="reference" ng-repeat="references in app.person.references">
-                        <references references="references"></references>    
-                    </div>
-                  </div>
+                  <h6 class="pt-3">Education</h6>
+                  <hr>
+                  <ul class="p-0">
+                    <li class="mb-1" ng-repeat="education in app.person.education">
+                      <education  education="education"></education>    
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div class="row skills">
-                  <div class="col-12">
-                    <p class="title text-capitalize">Technical Skills</p>
-                    <div class="border-top">
-                      <div class="col-12">
-                        <form action="Search">
-                          <div class="form-group">
-                            <label for="searchSkills">Search:</label>
-                            <input class="form-control" type="text" name="searchSkill" id="searchSkill" ng-model="searchSkill" placeholder="Web, Languages, Framework, DevOps, Methodologies, CMS, Adobe, DataBase">
-                            <ul class="add-margin-top">
-                              <li ng-repeat="technicalSkills in app.person.technicalSkills | filter:searchSkill">
-                                <technical-skills  skills="technicalSkills"></technical-skills>    
-                              </li>
-                            </ul>
-                          </div>
-                        </form>
-                        </div>
-                    </div>
-                  </div>
-                </div>
             </div>
-        </div>
+          </section>
+      </div>
+      <div id="experience" class="col-12 col-sm-4 no-padding">
+        <section id="academic-experience">
+          <div class="container">
+            <div class="row no-padding">
+              <div class="col-12">
+                <h6 class="pt-3">Academic/Professional Experience</h6>
+                <hr>
+                <div ng-repeat="academicExperience in app.person.academicExperience">
+                  <academic-experience  experience="academicExperience"></academic-experience>    
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="courses">
+          <div class="container">
+            <div class="row no-padding">
+              <div class="col-12">
+                <h6 class="pt-3">Courses</h6>
+                <hr>
+                <div ng-repeat="courses in app.person.courses">
+                  <courses  courses="courses"></courses>    
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="references">
+          <div class="container">
+            <div class="row no-padding">
+              <div class="col-12">
+                <h6 class="pt-3">References</h6>
+                <hr>
+                <div class="reference" ng-repeat="references in app.person.references">
+                    <references references="references"></references>    
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="skills" class="col-12 col-sm-4 no-padding">
+        <section id="technical-skills">
+          <div class="container">
+            <div class="row no-padding">
+              <div class="col-12">
+                <h6 class="pt-3">Technical Skills</h6>
+                <hr>
+                <label for="searchSkills"><b>Search:</b></label>
+                <input class="form-control mb-3" type="text" name="searchSkill" id="searchSkill" ng-model="searchSkill" placeholder="Web, Languages, Framework, DataBase..." alt="Web, Languages, Framework, DevOps, Methodologies, CMS, Adobe, DataBase" title="Web, Languages, Framework, DevOps, Methodologies, CMS, Adobe, DataBase">
+                <ul class="p-0">
+                  <li class="pb-1" ng-repeat="technicalSkills in app.person.technicalSkills | filter:searchSkill">
+                    <technical-skills  skills="technicalSkills"></technical-skills>    
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   </div>
 </main>
-<footer></footer>

@@ -1,87 +1,72 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i');
-/* styles in src/style directory are applied to the whole page */
+/* Fonts */
+/*Mixins*/
+/*Variables*/
+/*General Style*/
 body {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
   background-color: #fdfdfd;
 }
-.home a {
-  color: #009fc2;
-}
-.home a:hover, .home a:active, .home a:focus {
-  color: #1c738b;
-}
-.home .no-padding {
+.no-padding {
   padding-left: 0;
   padding-right: 0;
 }
-.home .img-name {
-  margin: 20px 0;
+.box-shadow {
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
-.home .img-name img {
-  display: block;
-  margin: 0 auto;
-}
-.home .border-top {
-  border-top: 1px solid #000;
-  padding-top: 20px;
-}
-.home .title {
-  margin-bottom: 0;
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  margin-top: 20px;
+}
+a {
+  color: #fff;
+}
+a:hover, a:active, a:focus {
+  text-decoration: underline;
+}
+ul li {
+  list-style-type: none;
+}
+main #overview {
+  background: url("../public/assets/bg-image-2.png") repeat;
+}
+main #overview #general h3, main #overview #personal-information h3, main #overview #languages h3, main #overview #education h3, main #overview #general h5, main #overview #personal-information h5, main #overview #languages h5, main #overview #education h5, main #overview #general h6, main #overview #personal-information h6, main #overview #languages h6, main #overview #education h6, main #overview #general p, main #overview #personal-information p, main #overview #languages p, main #overview #education p, main #overview #general a, main #overview #personal-information a, main #overview #languages a, main #overview #education a, main #overview #general ul li, main #overview #personal-information ul li, main #overview #languages ul li, main #overview #education ul li {
+  color: #fff;
+}
+main #overview #general hr, main #overview #personal-information hr, main #overview #languages hr, main #overview #education hr {
+  border-color: #fff;
+}
+main #experience {
+  padding-top: 3rem !important;
+}
+main #experience #academic-experience h6 {
   color: #009fc2;
 }
-.home .personal-info h3 {
-  font-weight: 700;
+main #experience #academic-experience .black-color {
+  color: #000;
 }
-.home .personal-info ul, .home .acad-pro-experience ul, .home .languages ul, .home .education ul {
-  list-style-type: none;
-  padding-left: 0;
+main #experience #academic-experience div.list-academic:last-child p {
+  padding-bottom: 0;
+  margin-bottom: 0.25rem !important;
 }
-.home .personal-info ul li, .home .acad-pro-experience ul li, .home .languages ul li, .home .education ul li {
-  margin-bottom: 8px;
+main #experience #academic-experience div.list-academic:before {
+  font-family: 'FontAwesome';
+  content: '\f067';
+  margin: 0 5px 0 -15px;
+  color: #f00;
 }
-.home .languages .title {
-  margin-top: 20px;
+main #experience #experience h6, main #experience #courses h6, main #experience #references h6 {
+  color: #009fc2;
 }
-.home .languages ul li {
-  margin-bottom: 8px;
+main #skills #technical-skills h6 {
+  color: #009fc2;
 }
-.home .languages ul li p {
-  margin-bottom: 0;
-}
-.home .education span.department {
-  font-weight: 700;
-}
-.home .acad-pro-experience .experience-date, .home .acad-pro-experience .experience-descrip-place {
-  margin-bottom: 0;
-}
-.home .acad-pro-experience .experience-descrip-place {
-  font-style: italic;
-}
-.home .references {
-  margin-top: 10px;
-}
-.home .references .border-top .reference {
-  margin-top: 10px;
-}
-.home .references .border-top .reference .reference-name, .home .references .border-top .reference .reference-workplace, .home .references .border-top .reference .reference-cellphone, .home .references .border-top .reference .reference-email {
-  margin-bottom: 0;
-}
-.home .references .border-top .reference:first-child {
-  margin-top: 0;
-}
-.home .courses .title {
-  margin-top: 20px;
-}
-.home .courses .border-top div:last-child p:last-child {
-  margin-bottom: 0;
-}
-.home .skills .border-top .form-group input {
-  display: block;
-  width: 100%;
-}
-.home .skills .border-top .form-group .add-margin-top {
-  margin-top: 10px;
+@media (min-width: 768px) {
+  #experience {
+    padding-bottom: 3rem !important;
+  }
+  #skills {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
 }
